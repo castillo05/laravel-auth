@@ -23,6 +23,7 @@ Route::post('register', 'UserController@register');
         Route::get('users', 'UserController@users');
         Route::get('ticket/{id_user}', 'TicketController@index');
         Route::post('ticket', 'TicketController@store');
+        Route::get('getticket/{id}', 'TicketController@getticket');
         Route::put('ticket/{id}', 'TicketController@update');
         Route::delete('ticket/{id}', 'TicketController@destroy');
         Route::get('tickets', 'TicketController@tickets');

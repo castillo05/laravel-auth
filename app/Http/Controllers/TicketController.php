@@ -32,6 +32,14 @@ class TicketController extends Controller
         return $t;
     }
 
+    public function getticket($id)
+    {
+        # code...
+        // $t=ticket::where('id',$id)->get();
+        $t=ticket::select('tickets.id','users.name','tickets.id_user','tickets.ticket_pedido')->join('users','users.id','=','tickets.id_user')->where('tickets.id',$id)->get();
+        return $t;
+    }
+
     public function store(Request $request)
     {
         # code...
