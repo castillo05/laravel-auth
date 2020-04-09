@@ -15,6 +15,7 @@ Esta es una api desarrollada con laravel a continuacion se dictan las instruccio
 - Instalamos dependencias con composer install.
 - Ejecutamos php artisan serve.
 - El servidor se ejecura en http://localhost:8000/api.
+- El proyecto tiene un archivo .env (Variables de entorno) en donde tendra que insertar la informacion de la base de datos como: user, password, nombre de la bd. (Se incluye un .env.example para guiarse)
 
 La base de datos esta en mysql asi que tendra que crear la BD en su servidor.
 - La BD no tiene contraseña.
