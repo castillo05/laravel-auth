@@ -27,6 +27,7 @@ Route::post('register', 'UserController@register');
         Route::put('ticket/{id}', 'TicketController@update');
         Route::delete('ticket/{id}', 'TicketController@destroy');
         Route::get('tickets', 'TicketController@tickets');
+        Route::get('countticket', 'TicketController@countticket');
     });
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
